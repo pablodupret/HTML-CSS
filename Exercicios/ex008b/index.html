@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    
+    <h1> OUTRAS FORMATAÇÕES </h1>
+
+    <h2> CÓDIGO-FONTE </h2>
+
+    <p> Usamos a tag code para facilitar a leitura de códigos, pois ele deixa a fonte monoespaçada, veja um exemplo </p>
+
+    <p> O código <code> document.getElementsbyId( 'teste)</code> é escrito em JavaScript</p>
+
+    <p> Fonte monoespaçada significa que ela reserva o mesmo espaço para todos os caracteres, ou seja, uma letra l ocupa o mesmo espaço de uma letra E.</p>
+
+
+    <p> O problema é quando queremos mostrar um código com várias linhas. Apenas a tag code não resolve este problema, veja: </p>
+
+    <pre>
+        <code>
+    num = int(input('Digite um número'))
+    if num% 2 == 0
+        print (f'O número {num} é par')
+    else:
+        print (f'O número {num} é impar')
+    print( 'Fim do programa')
+        </code>
+    </pre>
+
+    <H2> CITAÇÕES SIMPLES</H2>
+
+    <p> Citação simples é aquele sem quebra de linha </p>
+
+    <P> Para inserir citações recomenda-se usar a tag q . Significa quotation e é uma tag semântica, por isso carrega mais significado do que simplesmente colocar as aspas. Exemplo:</P>
+
+    <p> <q> O computador é um burro muito rápido </q>  Esta citação foi inserida usando a tag q</p>
+
+
+
+    <h2> CITAÇÃO COM BLOCKQUOTE </h2>
+
+    <p> Citaçao com blockquote é uma citação com quebra de linha, espaçamento e na qual é possível inserir a origem da citação </p>
+
+    <p> Exemplo</p>
+
+    <p> Segundo carol S. Dewck:</p>
+    <blockquote cite="https://books.google.com.br/books?id=aizjDQAAQBAJ&printsec=frontcover&dq=mindset&hl=pt-PT&sa=X&redir_esc=y#v=onepage&q=mindset&f=false">
+
+        Acreditar que suas qualidades são imutáveis - o mindset fixo - cria a necessidade constante de provar a si mesmo seu valor. Se você [pssui apenas uma quantidade limitada de inteligência, determinada personalidade e certo caráter moral, nesse caso terá de provar a si mesmo que essas doses são saudáveis. Não lhe agradaria parecer ou sentir-se deficiente quanto a essas características fundamentais.
+    </blockquote>
+
+    <p> O parâmetro cite não aparece na página, ele é apenas um referência que indica para mecanismos de busca de onde a informação foi tirada </p>
+
+    <H2> ABREVIAÇÕES</H2>
+
+    <p> É possível descrever o significado de uma abreviação usando a tag ABBR , veja:</p>
+
+    <p> Estou estudando <abbr title="Hyper text markup language">HTML</abbr> e <abbr title="Cascading style sheets">CSS</abbr> </p>
+
+</body>
+</html>

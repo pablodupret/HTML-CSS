@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Picture</title>
+</head>
+<body>
+    
+    <h1> Teste com a tag picture  </h1>
+    
+    <p> A tag picture vai possuir dentro dela uma tag img, mas ela vai permitir diversos "sources" diferentes e isso vai permitir que o site carregue uma imagem de tamanho mais adequado a tela do usuário </p>
+
+    <p> Veja abaixo o exemplo </p>
+    <p> Primeiro, por padrão, o site carregará a imagem grande - foto-g.png</p>
+    <p> Porém, caso a tela possua largura até 1050px ele carregará a imagem Média</p>
+    <p> E se o tamanho de largura for menor do que 750px o site mostrará a imagem Pequena</p>
+
+   <!-- <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto grande flexivel">
+    </picture> -->
+
+    <!-- Abaixo apenas refazendo como exercício a mesma coisa para praticar-->
+        <picture>
+            <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">  
+            <img src="imagens/foto-g.png" alt="imagem grande">
+        </picture>
+
+     <h1> Inserindo audio - outra aula ! </h1>   
+     
+     <p> Para reproduzir um audio em HTML basta insetir a tag audio ! </p>
+
+     <audio controls preload="metadata">
+        <source src="media/The_Wicker_Man-final.mp3" type="audio/mpeg">
+
+     </audio>
+
+     <p> Caso o audio não seja reproduzido clique no link abaixo para baixar o arquivo</p>
+     <a href="media/The_Wicker_Man-final.mp3"> Clique aqui </a>
+
+</body>
+</html>
