@@ -5,12 +5,135 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas Grandes</title>
+<style>
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 400px;
+}
+
+thead, tfoot {
+
+    background-color: darkgray;
+}
+
+th {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+td {
+    
+    border: 1px solid black;
+    padding: 5px;
+} 
+
+td.numero {
+
+    text-align: right;
+}
+</style>
+
+
+
+
 </head>
 <body>
 
     <h1> Uso de Tabelas Grandes </h1>
 
+    <table>
     
+        <thead> 
+
+            <tr>
+                <th> Estado </th> 
+                <th> População </th>
+            </tr>
+
+        </thead>
+
+    <tbody> 
+
+        <tr> 
+            <td> São Paulo </td>
+            <td class="numero"> 45.919.049 </td>
+        </tr>
+
+        <tr>
+            <td> Minas Gerais </td>
+            <td class="numero"> 22.543.234 </td>
+        </tr>
+
+        <tr> 
+            <td> Rio de Janeiro </td>
+            <td class="numero"> 17.543.243</td>
+        </tr>
+
+        <tr> 
+            <td> Bahia </td>
+            <td class="numero"> 14.874.243</td>
+        </tr>
+        <tr> 
+            <td> Parana </td>
+            <td class="numero"> 11.743.634 </td>
+        </tr>
+        <tr> 
+            <td> Rio Grande do Sul </td>
+            <td class="numero"> 11.428.393 </td>
+        </tr>
+        <tr> 
+            <td> Pernambuco </td>
+            <td class="numero"> 9.555.342 </td>
+        </tr>
+        <tr> 
+            <td> Rio de Janeiro </td>
+            <td class="numero"> 8.754.234 </td>
+        </tr>
+        <tr> 
+            <td> Rio de Janeiro </td>
+            <td class="numero"> 7.543.243</td>
+        </tr>
+        <tr> 
+            <td> Rio de Janeiro </td>
+            <td class="numero"> 6.987.567 </td>
+        </tr>
+        <tr> 
+            <td> Rio de Janeiro </td>
+            <td class="numero"> 5.876.542 </td>
+        </tr>
+        <tr> 
+            <td> Rio de Janeiro </td>
+            <td class="numero"> 5.564.567 </td>
+        </tr>
+        <tr> 
+            <td> Rio de Janeiro </td>
+            <td class="numero"> 4.900.343 </td>
+        </tr>
+        <tr> 
+            <td> Rio de Janeiro </td>
+            <td class="numero"> 4.564.887 </td>
+        </tr>
+
+
+    </tbody>
+
+    <tfoot> 
+        <th> Total de Habitantes</th>
+        <td class="numero"> <strong>210.563.325</strong> </td>
+
+
+
+    </tfoot>
+
+    </table>
     
 </body>
 </html>
