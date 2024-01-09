@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 004</title>
+</head>
+<body>
+    
+    <h1> Teste de Formulário</h1>
+    <h2> Telefone e e-Mail</h2>
+
+    <form action="cadastro.php">
+
+        <fieldset>
+            <legend> Dados Pessoais </legend>
+        <p>
+            <label for="inome "> Nome </label>
+            <input type="text" name="nome" id="inome">
+        </p>
+
+        <p>
+            <label for="itelefone"> Telefone </label>
+            <input type="tel" name="telefone" id="itelefone" required autocomplete="tel" placeholder="(xx) xxxxx-xxxx">
+        </p>
+
+        <p> 
+            <label for="iemail"> Email </label>
+            <input type="email" name="email" id="iemail" required autocomplete="email">
+        </p>
+        </fieldset>
+        <p></p>
+
+        <!-- É possível usar o PATTERN para que ele aceita o preenchimento dentro um padrão, mas nãofuncionou aqui. Depois pesquisar como inserir o PATTERN dentro do input
+        
+        Pesquisas HTML5 telefone Pattern
+        -->
+
+
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>
