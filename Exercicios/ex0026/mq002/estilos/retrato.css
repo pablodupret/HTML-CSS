@@ -2,3 +2,7 @@
 
 /* confuguração retrato*/
 
+body {
+
+    background-image: url(../imagens/cev-portrait.jpg);
+}
