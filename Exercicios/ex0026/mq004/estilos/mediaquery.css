@@ -2,13 +2,94 @@
 
 /* Todas Demais versões */ 
 
+/* Typical device Breakpoints passados na aula
+
+Pequenas telas: Até 600px
+Celular: de 600 a 768px
+TAblet: 768 a 992px
+Desktop: 992 a 1200px
+Grasndes telas: acima de 1200pc
+*/
+/* Esses valores são atualizados ano apos ano com a atualização dos aparelhos, entao é bom pesquisar antes de ininicar o projeto */
 
 
+/*Para impressão*/
 @media print {
+
+    body{
+        background-image: url(../imagens/back-print.jpg);
+    }
+    
+    main {
+        border: 2px solid black;
+    }
+
+    main h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: none;
+        color: black;
+
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: block;}
+    img#pc {display: none;}
+    img#tv {display: none;}
 
     
 }
 
-@media screen {
+/*
+1 - Declaração para Pequenas telas
+@media screen and (max-width: 600px) {}
+2 - Declaração para Celulares
+@media screen and (min-width: 600px) and (max-width: 768px) {}
+--- Ocorre que não vamos usar estas duas declarações pq este site ja foi feito como mobile first, então, isso já configurado e aqui no media queries podemos configurar apenas os demais tamanhos*/
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
     
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+
+
+}
+
+/*Desktop*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: block;}
+    img#tv {display: none;}
+
+
+}
+
+/*telas grandes*/
+@media screen and (min-width: 1200px) {
+
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: block;}
+
 }
