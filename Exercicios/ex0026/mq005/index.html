@@ -8,12 +8,17 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onload="load()" onresize="mudouTamanho()">
+
+    
+
 
     <header>
         <h1> Projeto Media Query </h1>
-        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <span id="burguer" class="material-icons" onclick="clickMenu()"> menu </span>
+
         <menu id="itens">
             <ul>
                 <li> <a href="#"> Opção 1 </a></li>
@@ -42,14 +47,28 @@
     <script>
 
         function clickMenu() {
-            if (itens.style.display == 'block')
+            if (itens.style.display == "block")
             itens.style.display = 'none'
             else {
                 itens.style.display = 'block'
             }}
         
+            function mudouTamanho(){
+                if (window.innerWidth >= 768) {
+                    itens.style.display = "block"
+                } else {
+                    itens.style.display = "none"
+
+                }
+            }
+
+            /* O site tava com um problema que ao atualizar o MENU sumia, ai eu criei um JAVASCRIPT ONLOAD, aí voltou a funcionar. Mas depois voltou mesmo sem a função, entao eu deixei aqui apenas como comentário*/ 
+            /* function load(){
+                itens.style.display == 'block'
+            } */  
 
     </script>
+   
 
 </body>
 </html>

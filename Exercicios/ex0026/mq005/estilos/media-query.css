@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/* Typical device Breakpoints passados na aula
+
+Pequenas telas: Até 600px
+Celular: de 600 a 768px
+TAblet: 768 a 992px
+Desktop: 992 a 1200px
+Grasndes telas: acima de 1200pc
+*/
+
+@media screen and (min-width: 768px){
+
+    
+
+    span#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+
+        display: inline-block;
+    }
+
+    main {
+        width: 769px;
+    }
+
+    
+}
+/* min 768 quer dizer que acima disso, ou sejam, tablet pra cima, vai mostrar diferente). */
+
+
