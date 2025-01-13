@@ -19,15 +19,26 @@ header {
     background-color: darkgray;
     color: white;
     padding: 10px;
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header > h1 {
 
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
+    flex: 0 0 200px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.448);
 }
 
 header > nav {
-    border: 1px dotted red;
+    /* border: 1px dotted red; */
+
+    display: flex;
+    justify-content: end;
+    flex-flow: row wrap;
 }
 
 header > nav > a {
