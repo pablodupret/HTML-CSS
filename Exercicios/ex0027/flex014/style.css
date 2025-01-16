@@ -26,8 +26,44 @@ p, h1, h2 {
 section.flex-content {
     background-color: rgba(128, 128, 128, 0.586);
     padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 section.class-normal {
     padding: 20px;
+}
+
+section > article {
+    border: 3px dashed green;
+}
+
+article.media-text {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    align-items: center;
+}
+
+article.text-media {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+div.text {
+
+    flex: 1 1 500px;
+    border: 1px dashed blue;
+}
+
+div.media {
+    flex: 1 0 500px;
+    border: 1px dashed red;
+  
+}
+
+div.media > iframe {
+    display: block;
+    margin: auto;
+    width: 500px;
 }
